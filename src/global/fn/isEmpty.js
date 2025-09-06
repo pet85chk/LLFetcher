@@ -4,6 +4,6 @@ export function isEmpty(value) {
     value === null ||
     (typeof value === "string" && value.trim() === "") ||
     (typeof value === "number" && isNaN(value)) ||
-    (Array.isArray(value) && value.length > 0)
+    (Array.isArray(value) && value.length === 0)
   )
 }

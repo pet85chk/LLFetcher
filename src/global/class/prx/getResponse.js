@@ -10,7 +10,7 @@ export const getResponse = async (response) => {
     validData = true
   } catch (error) {
     text = response.statusText
-    // console.log(error)
+    console.error('Error getting response text:', error)
   }
   return { data, text, ok, code, validData }
 }

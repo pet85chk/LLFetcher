@@ -169,7 +169,7 @@ class WelcomePage extends ComponentWithMessaging {
   async getIsLoginMessage() {
     const msg = "cmd.isLogin"
     const isLogin = await this.getFromMessage(msg)
-    this.seState({ isLogin })
+    this.setState({ isLogin })
   }
   async getCourseInfoMessage() {
     const msg = "cmd.getCourseInfo"

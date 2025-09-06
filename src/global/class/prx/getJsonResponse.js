@@ -9,9 +9,10 @@ export const getJsonResponse = async (response) => {
   try {
     data = await response.json()
     validJson = true
+    validData = true
   } catch (error) {
     text = response.statusText
-    // console.log(error)
+    console.error('Error parsing JSON response:', error)
   }
   return { data, text, ok, code, validJson, validData }
 }

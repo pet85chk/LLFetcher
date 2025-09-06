@@ -402,7 +402,7 @@ const getCourseSlugFromUrl = (url) => {
 		return [courseSlug,tocSlug]
 	}
 	
-	return [false,false]
+	return [courseSlug, false]
 
 	
 }

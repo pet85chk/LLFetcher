@@ -189,7 +189,7 @@ const DownloadManager = ({ store, config }) => {
 
   const updateCourse = (nCourse) => {
     setActiveCourseData((prevActiveCourseData) => {
-      return { ...oActiveCourseData, course: nCourse }
+      return { ...prevActiveCourseData, course: nCourse }
     })
   }
   if (activeCourseData) {

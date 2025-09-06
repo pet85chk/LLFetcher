@@ -417,7 +417,7 @@ export default class ChromeStorageIndexedDB {
     if (typeof default_values !== "undefined") {
       // loop through all the records in the table
       for (var id in this.db.data[table_name]) {
-        if (!db.data[table_name].hasOwnProperty(id)) {
+        if (!this.db.data[table_name].hasOwnProperty(id)) {
           continue
         }
         for (var field in new_fields) {
