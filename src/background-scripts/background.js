@@ -139,7 +139,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   } else if (request.action === "activateTab") {
     const { url, optionPageBaseUrl } = request
     chrome.tabs.query(
-      { url: `${chrome.runtime.getURL(`${optionPageBaseUrl}options.html`)}*` },
+      { url: `${chrome.runtime.getURL(`${optionPageBaseUrl}index.html`)}*` },
       function (tabs) {
         var activeTab = tabs[0]
         // Activate the tab

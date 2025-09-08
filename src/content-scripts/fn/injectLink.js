@@ -1,10 +1,12 @@
 /**
- * Injects a link tag into the DOM at the specified location.
+ * Inyecta un tag link en el DOM en la ubicación especificada.
  *
- * @param {string} href - The URL of the link to be injected.
- * @param {string} tag - The HTML tag name to use for the link element for eample head or body.
- * @param {function} [callback] - An optional callback function to be executed when the link has finished loading.
- * @param {function} [error] - An optional callback function to be executed if there is an error loading the link.
+ * @param {string} rel - El atributo rel del link
+ * @param {string} href - La URL del link a ser inyectado
+ * @param {boolean} preload - Si debe usar preload
+ * @param {string} tag - El nombre del elemento HTML donde inyectar (ej: head o body)
+ * @param {function} [callback] - Función callback opcional a ejecutar cuando el link termine de cargar
+ * @param {function} [error] - Función callback opcional a ejecutar si hay error cargando el link
  */
 export const injectLink = (
   rel,

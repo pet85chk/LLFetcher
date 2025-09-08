@@ -1,10 +1,11 @@
 /**
- * Injects a script tag into the DOM at the specified location.
+ * Inyecta un tag script en el DOM en la ubicación especificada.
  *
- * @param {string} src - The URL of the script to be injected.
- * @param {string} tag - The HTML tag name to use for the script element for eample head or body.
- * @param {function} [callback] - An optional callback function to be executed when the script has finished loading.
- * @param {function} [error] - An optional callback function to be executed if there is an error loading the script.
+ * @param {string} src - La URL del script a ser inyectado
+ * @param {string} tag - El nombre del elemento HTML donde inyectar (ej: head o body)
+ * @param {string} type - El tipo de script (por defecto "text/javascript")
+ * @param {function} [callback] - Función callback opcional a ejecutar cuando el script termine de cargar
+ * @param {function} [error] - Función callback opcional a ejecutar si hay error cargando el script
  */
 export const injectScript = (
   src,
